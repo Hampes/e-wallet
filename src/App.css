@@ -191,19 +191,12 @@ h1 {
 
 .inactiveCards > div:nth-child(3):hover {
   /* z-index: 4; */
-  /* transform: scaleY(1.2); */
-  /* transform: scale(1.1); */
-
-  /* -webkit-animation: action 1s infinite alternate;
-  animation: action 1s infinite alternate; */
+  
 
   -webkit-animation: action 1s forwards;
   animation: action 1s forwards;
 
-  /* 
-  transition-property: 100%, 100px, 100px, 100px;
-  transition-duration: 3s, 5s;
-  */
+
 
   box-shadow: 3px 3px 3px black;
   position: relative;
