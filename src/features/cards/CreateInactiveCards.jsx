@@ -155,14 +155,14 @@ export const CreateInactiveCards = () => {
 
       <div className="inputFields">
         <form>
-          <label>Namn</label>
+          <label>Name</label>
           <input
             className="inputName"
             defaultValue={`${first} ${last}`}
             type="text"
             disabled
           />
-          <label>Kortnummer</label>
+          <label>Card Number</label>
           <input
             className="inputCardNumber"
             type="text"
@@ -170,7 +170,7 @@ export const CreateInactiveCards = () => {
             maxLength="16"
             minLength="16"
             pattern="[0-9]"
-            placeholder="KORTNUMMER"
+            placeholder="CARDNUMBER"
           />
           <label>Valid thru</label>
           <input
@@ -179,17 +179,17 @@ export const CreateInactiveCards = () => {
             value={`${selectedYear}-${selectedMonth}`}
             onChange={handleMonthYearChange}
           />
-          <label>CVV</label>
+          <label>CCV</label>
           <input
-            placeholder="CVV"
+            placeholder="CCV"
             className="cardCvv"
             type="text"
             maxLength="3"
             pattern="[0-9]"
           />
-          <label>Välj kortutgivare</label>
+          <label>Card Vendor</label>
           <select onChange={handleLogo} className="selectLogo">
-            <option value="Select vender">Select vender</option>
+            <option value="Select vendor">Select vender</option>
             <option value="amex">American Express</option>
             <option>Handelsbanken</option>
             <option>Swedbank</option>
