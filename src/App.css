@@ -1,0 +1,298 @@
+h1 {
+  font-family: "Lexend Exa", sans-serif;
+  padding: 40px;
+  letter-spacing: 4;
+}
+
+#addCardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#activeCardDiv {
+  display: flex;
+  flex-direction: column;
+
+  width: 310px;
+  height: 165px;
+  padding: 24px 20px 20px 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+  gap: 15px;
+}
+
+#addCardDiv {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 165px;
+  padding: 20px;
+  border-radius: 5px;
+  gap: 15px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.activeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inactiveCardRow {
+  display: flex;
+  justify-content: space-between;
+  width: 356px;
+  align-items: center;
+}
+
+.firstIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardVendorImg {
+  height: 30px;
+}
+
+.iconImg {
+  width: 40px;
+}
+
+.chipDiv {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.connectImg {
+  height: 25px;
+  width: 30px;
+}
+
+.cardNameDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.placeholderName {
+  font-size: 10px;
+}
+
+.cardNum {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 700px;
+  gap: 30px;
+}
+
+.inactiveCards {
+  min-height: 200px;
+  min-width: 310px;
+  max-height: 400px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Handelsbanken {
+  background-image: radial-gradient(
+    circle,
+    #045080,
+    #0d4474,
+    #123967,
+    #152e5a,
+    #15234d
+  );
+  color: white;
+}
+
+.amex > .firstIcons > #imgLogo {
+  width: 40px;
+}
+
+.Swedbank {
+  /* background-color: #FACB05; */
+  background: linear-gradient(
+    to left bottom,
+    #f6a403,
+    #f8ae00,
+    #f9b700,
+    #fac100,
+    #facb05
+  );
+  height: 30px;
+  border: 1px solid white;
+}
+
+.American {
+  background: lightgray;
+}
+
+.amex {
+  background-image: linear-gradient(
+    to left bottom,
+    #c9c9c9,
+    #c1c3c5,
+    #a2a3a5,
+    #9e9fa2,
+    #8d8c8c
+  );
+  width: 40px;
+}
+
+.inputName {
+  font-size: 18px;
+}
+
+.inactiveCards > div:nth-child(2) {
+  z-index: 1;
+  position: relative;
+  /* top: 0px; */
+}
+.inactiveCards > div:nth-child(3) {
+  z-index: 2;
+  position: relative;
+  bottom: 145px;
+}
+.inactiveCards > div:nth-child(4) {
+  z-index: 3;
+  position: relative;
+  bottom: 290px;
+}
+
+.imgSb {
+  width: 70px;
+}
+
+.inactiveCards > div:nth-child(2):hover {
+  /* z-index: 4; */
+  box-shadow: 3px 3px 3px black;
+
+  position: relative;
+
+  -webkit-animation: action 1s forwards;
+  animation: action 1s forwards;
+}
+
+.inactiveCards > div:nth-child(3):hover {
+  /* z-index: 4; */
+  /* transform: scaleY(1.2); */
+  /* transform: scale(1.1); */
+
+  /* -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate; */
+
+  -webkit-animation: action 1s forwards;
+  animation: action 1s forwards;
+
+  /* 
+  transition-property: 100%, 100px, 100px, 100px;
+  transition-duration: 3s, 5s;
+  */
+
+  box-shadow: 3px 3px 3px black;
+  position: relative;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80px);
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80px);
+  }
+}
+
+.inactiveCards > div:nth-child(4):hover {
+  z-index: 4;
+  box-shadow: 3px 3px 3px black;
+
+  position: relative;
+
+  -webkit-animation: action 1s forwards;
+  animation: action 1s forwards;
+}
+
+.deleteCardBtn {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.deleteCardBtn:hover {
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #989898;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.american {
+  width: 160px;
+  height: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.activeCard > #activeCardDiv > .firstIcons > .deleteCardBtn {
+  display: none;
+}
+
+.centerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addCardButton {
+  width: 140px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 3px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #8e8e8e;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  font-family: "Lexend Exa", sans-serif;
+}

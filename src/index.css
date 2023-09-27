@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(232, 232, 232, 0.87);
+  background-color: #333;
+  opacity: 89%;
+}
+
+.lexend {
+  font-family: "Lexend Exa", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.button {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 3px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #8e8e8e;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  font-family: "Lexend Exa", sans-serif;
+  width: 280px;
+}
+
+input,
+select {
+  font-family: "Lexend Exa", sans-serif;
+  border-radius: 5px;
+  border: none;
+  background-color: #8e8e8e;
+  height: 15px;
+  padding: 5px;
+  margin: 6px 0;
+  border: 1px solid black;
+  color: white;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+select {
+  height: 35px;
+}
+
+a {
+  font-family: "Lexend Exa", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3px;
+  padding: 3px 0;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #8e8e8e;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 280px;
+}
+
+.button:hover,
+a:hover {
+  background-color: #6d6d6d;
+}
