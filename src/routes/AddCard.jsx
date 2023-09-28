@@ -1,6 +1,6 @@
 
 import React from "react";
-import { CreateInactiveCards } from "../features/cards/createInactiveCards";
+import { CreateInactiveCards } from "../features/cards/CreateInactiveCards";
 
 const AddCard = () => {
   

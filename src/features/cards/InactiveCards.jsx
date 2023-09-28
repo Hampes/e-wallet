@@ -12,7 +12,7 @@ const InactiveCards = () => {
     <div className="inactiveCards">
       <div className="inactiveCardRow">
         <p className="lexend">Inactive Cards</p>
-        <Nav />
+        <Nav className="addCardButton" />
       </div>
 
       {inactiveCards.map((card, i) => i < 3 && <Card key={i} {...card} />)}

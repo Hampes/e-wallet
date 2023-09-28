@@ -289,3 +289,18 @@ form {
   margin: 10px;
   font-family: "Lexend Exa", sans-serif;
 }
+
+.addCardButtons {
+  width: 272px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 3px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #8e8e8e;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  font-family: "Lexend Exa", sans-serif;
+}

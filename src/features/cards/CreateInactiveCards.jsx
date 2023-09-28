@@ -48,11 +48,11 @@ export const CreateInactiveCards = () => {
 
     if (selectLogo === "amex") {
       imgLogo.src = "../images/amex.png";
-      imgLogo.classList.remove("imgHb");
+      // imgLogo.classList.remove("imgHb");
       activeCardDiv.classList.add("amex");
       activeCardDiv.classList.remove("Handelsbanken");
       activeCardDiv.classList.remove("Swedbank");
-      activeCardDiv.classList.remove("hbColorCard");
+      // activeCardDiv.classList.remove("hbColorCard");
     } else if (selectLogo === "Handelsbanken") {
       imgLogo.src = "../images/Handelsbanken.png";
       imgLogo.classList.add("imgHb");
@@ -96,17 +96,15 @@ export const CreateInactiveCards = () => {
     let cardNum = document.querySelector(".cardNum").innerHTML;
     let inputValidTo = document.querySelector(".inputValidTo").value;
 
-    console.log(cardNum.length);
-
     let message = "";
 
     switch (true) {
       case cards.length >= 4:
-        message = "Du kan max ha 4 kort!";
+        message = "You can have a maximum of 4 cards!";
         break;
 
       case cardNum.length < 19:
-        message = "Kortnumret måste bestå av minst 16 siffror";
+        message = "The card number must contain at least 16 digits.";
         break;
 
       case selectLogo !== "Select vender" &&
@@ -116,23 +114,23 @@ export const CreateInactiveCards = () => {
         return;
 
       case selectLogo !== "Select vender" && saveCardNumber !== "":
-        message = "Fyll i datum";
+        message = "Fill in the date";
         break;
 
       case selectLogo !== "Select vender" &&
         inputValidTo === "" &&
         saveCardNumber === "":
-        message = "Fyll i kortnummer och datum";
+        message = "Fill in cardnumber and date";
         break;
 
       case selectLogo === "Select vender" && inputValidTo !== "":
-        message = "Välj kortutvigvare";
+        message = "Choose cardvendor";
         break;
 
       case selectLogo === "Select vender" &&
         inputValidTo === "" &&
         saveCardNumber !== "":
-        message = "Fyll i Cardvendor och datum";
+        message = "Fill in cardvendor and cardnumber";
         break;
 
       case cardNum.length <= 19:
@@ -144,8 +142,6 @@ export const CreateInactiveCards = () => {
     }
     alert(message);
   };
-
-  console.log(cards);
 
   const isHome = window.location.pathname !== "/addCard";
 
@@ -178,6 +174,7 @@ export const CreateInactiveCards = () => {
             type="month"
             value={`${selectedYear}-${selectedMonth}`}
             onChange={handleMonthYearChange}
+            min="2023-10"
           />
           <label>CCV</label>
           <input
@@ -198,7 +195,9 @@ export const CreateInactiveCards = () => {
         <button className="button buttonDisabled" onClick={disabledBtn}>
           Add card
         </button>
-        <Link to="/">Home</Link>
+        <Link className="addCardButtons" to="/">
+          Home
+        </Link>
       </div>
     </div>
   );

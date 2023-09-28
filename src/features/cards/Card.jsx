@@ -19,6 +19,9 @@ export const Card = (props) => {
   const dispatch = useDispatch();
 
   const clickedCardIndex = cards.findIndex((card) => card.cardNum === cardNum);
+
+// Gör kort aktivt vid dubbelklick
+
   const click = () => {
     cards.map((card) => {
       return card.isActive == false;
